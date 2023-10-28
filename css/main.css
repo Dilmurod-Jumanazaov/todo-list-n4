@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+img {
+  display: block;
+  height: auto;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.732);
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.hero__title::after {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/trueicon.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  content: "";
+}
+.hero__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-textwrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 40px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.hero__todo-input {
+  width: 80%;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 0px 1px 10px 2px rgb(184, 184, 102);
+}
+.hero__todo-input::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.hero__sound-btn {
+  display: inline-block;
+  max-width: 60px;
+  width: 100%;
+  height: 51px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-image: url("/images/microphone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  background-color: transparent;
+  transform: scale(1.1px);
+  box-shadow: 0px 1px 10px 2px rgb(185, 185, 109);
+}
+.active-sound {
+  background-image: url("/images/blackmicrophone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  background-color: transparent;
+}
+.hero__sound-btn-text {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 78.3%;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  animation: soundText 3s linear infinite;
+}
+.hero__todo-btn {
+  width: 10%;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 0px 1px 10px 2px rgb(181, 181, 100);
+}
+.list__item-check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px 2px rgb(185, 185, 109);
+}
+.list__item-check-input:checked::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 33px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  content: '\2713';
+}
+.hero__list {
+  display: none;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+.list__item-id {
+  font-size: 24px;
+  font-weight: bold;
+}
+.list__item-text {
+  font-size: 17px;
+  font-weight: 600;
+}
+.list__item-check-input {
+  border: 2px solid black;
+  background-color: transparent;
+}
+/* animation */
+@keyframes soundText {
+  0% {
+    color: black;
+    opacity: 1;
+  }
+  50% {
+    color: #fff;
+    opacity: 0.7;
+  }
+  100% {
+    color: black;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <!-- site header started -->
+    <header class="site-header"></header>
+    <!-- site header end -->
+    <!-- site main started -->
+    <main class="site-main">
+      <!-- hero section started -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Todo List</h1>
+          <form class="hero__form js-form">
+            <input
+              class="hero__todo-input js-todo-input"
+              type="text"
+              name="user_todos"
+              aria-label="Enter your todos"
+              placeholder="Enter your todos..."
+              required
+            />
+            <button class="hero__sound-btn" type="button"></button>
+            <span class="hero__sound-btn-text"> Voice recording... </span>
+            <button class="hero__todo-btn js-" type="submit">Add</button>
+          </form>
+          <ul class="hero__list list"></ul>
+        </div>
+      </section>
+      <!-- hero section end -->
+    </main>
+    <!-- site main end -->
+    <!-- site footer started -->
+    <footer class="site-footer"></footer>
+    <!-- site footer end -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
