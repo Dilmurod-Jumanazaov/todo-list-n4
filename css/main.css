@@ -13,6 +13,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(0, 0, 0, 0.732);
 }
+.hero {
+  padding-bottom: 50px;
+}
 .container {
   max-width: 1280px;
   width: 100%;
@@ -116,7 +119,7 @@ body {
   background-color: transparent;
   box-shadow: 0px 1px 10px 2px rgb(181, 181, 100);
 }
-.list__item-check-input {
+/* .list__item-check-input {
   appearance: none;
   -webkit-appearance: none;
   width: 22px;
@@ -135,14 +138,32 @@ body {
   font-weight: bold;
   color: #fff;
   content: '\2713';
+} */
+.hero__btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.hero__btn {
+  max-width: 200px;
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffffbd;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #432;
 }
 .hero__list {
   display: none;
   position: relative;
   margin: 0;
   padding-left: 0;
-  list-style: none;
   padding: 30px;
+  list-style: none;
   border: 2px solid #000;
   border-radius: 10px;
 }
@@ -153,18 +174,49 @@ body {
   margin-bottom: 20px;
   border-bottom: 2px solid #000;
 }
-.list__item-id {
-  font-size: 24px;
-  font-weight: bold;
+.todo-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .list__item-text {
   font-size: 17px;
   font-weight: 600;
 }
-.list__item-check-input {
+.item-check-input {
+  text-decoration: line-through;
+}
+.item-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.item-edit-btn {
+  max-width: 150px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: bisque;
+}
+.item-delete-btn {
+  max-width: 150px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.485);
+}
+/* .list__item-check-input {
   border: 2px solid black;
   background-color: transparent;
-}
+} */
 /* animation */
 @keyframes soundText {
   0% {

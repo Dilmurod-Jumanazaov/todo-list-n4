@@ -16,7 +16,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Todo List</h1>
-          <form class="hero__form js-form">
+          <form class="hero__form js-form " autocomplete="off">
             <input
               class="hero__todo-input js-todo-input"
               type="text"
@@ -25,11 +25,31 @@
               placeholder="Enter your todos..."
               required
             />
-            <button class="hero__sound-btn" type="button"></button>
+            <button class="hero__sound-btn js-hero-sound-btn" type="button"></button>
             <span class="hero__sound-btn-text"> Voice recording... </span>
             <button class="hero__todo-btn js-" type="submit">Add</button>
           </form>
-          <ul class="hero__list list"></ul>
+          <div class="hero__btn-box js-hero-btn-wrapper">
+            <button class="hero__btn js-hero-all-btn" type="button">
+              All todo
+              <strong class="her__btn-number js-all-btn-number">
+                0
+              </strong>
+            </button>
+            <button class="hero__btn js-hero-completed-btn" type="button">
+              Completed
+              <strong class="hero__btn-number js-completed-btn-number">
+                0
+              </strong>
+            </button>
+            <button class="hero__btn js-hero-uncompleted-btn" type="button">
+              Uncompleted
+              <strong class="hero__btn-number js-uncompleted-btn-number">
+                0
+              </strong>
+            </button>
+          </div>
+          <ul class="hero__list js-hero-list"></ul>
         </div>
       </section>
       <!-- hero section end -->
